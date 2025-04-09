@@ -1,8 +1,8 @@
-import { HiPencil } from "react-icons/hi2";
-import { IoFilter } from "react-icons/io5";
-
-import profileImg from "../assets/profile.png";
 import { Input } from "../components/input";
+import { Button } from "../components/button";
+
+import { HiPencil } from "react-icons/hi2";
+import profileImg from "../assets/profile.png";
 
 export function Board() {
   return (
@@ -16,10 +16,7 @@ export function Board() {
       </div>
 
       <div className="flex flex-row items-center gap-4">
-        <button>
-          <IoFilter className="text-2xl" />
-          <span className="">Filtrar</span>
-        </button>
+        <Button />
         <Input />
       </div>
 

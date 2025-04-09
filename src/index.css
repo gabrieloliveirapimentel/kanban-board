@@ -31,3 +31,10 @@ h1 {
   font-weight: 700;
   color: #403937;
 }
+
+input {
+  &:focus {
+    outline: none;
+    box-shadow: 0;
+  }
+}
