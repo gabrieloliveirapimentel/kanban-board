@@ -1,38 +1,28 @@
 import logoImg from "../assets/logo.svg";
-
-import phone from "../assets/tablet-portrait.svg";
-import people from "../assets/people.svg";
-import document from "../assets/document-text.svg";
-import configuration from "../assets/cog.svg";
+import { FaClipboard, FaUserGroup, FaFileLines, FaGear } from "react-icons/fa6";
 
 export function Menu() {
   return (
-    <div className="flex flex-col px-10 pt-8">
+    <div className="flex flex-col px-12 pt-8">
       <img src={logoImg} alt="Logo" className="w-16 h-16" />
 
-      <div className="grid gap-8 mt-20">
-        <div className="flex flex-row items-center">
-          <img src={phone} alt="Phone" className="w-6 h-6" />
-          <span className="text-lg text-white font-bold ml-4">Boards</span>
-        </div>
-        <div className="flex flex-row items-center">
-          <img src={people} alt="People" className="w-6 h-6" />
-          <span className="text-lg text-[#CAB3FF] font-semibold ml-4">
-            Equipes
-          </span>
-        </div>
-        <div className="flex flex-row items-center">
-          <img src={document} alt="Document" className="w-6 h-6" />
-          <span className="text-lg text-[#CAB3FF] font-semibold ml-4">
-            Relatórios
-          </span>
-        </div>
-        <div className="flex flex-row items-center">
-          <img src={configuration} alt="Configuration" className="w-6 h-6" />
-          <span className="text-lg text-[#CAB3FF] font-semibold ml-4">
-            Ajustes
-          </span>
-        </div>
+      <div className="grid gap-6 mt-20">
+        <button className="flex flex-row items-center hover:cursor-pointer">
+          <FaClipboard className="w-5 h-5 text-white" />
+          <span className="text-lg ml-2 font-bold text-white">Boards</span>
+        </button>
+        <button className="flex flex-row items-center ">
+          <FaUserGroup className="w-5 h-5 text-[#CAB3FF]" />
+          <span className="text-lg ml-2 text-[#CAB3FF]">Equipes</span>
+        </button>
+        <button className="flex flex-row items-center">
+          <FaFileLines className="w-5 h-5 text-[#CAB3FF]" />
+          <span className="text-lg ml-2 text-[#CAB3FF]">Relatórios</span>
+        </button>
+        <button className="flex flex-row items-center">
+          <FaGear className="w-5 h-5 text-[#CAB3FF]" />
+          <span className="text-lg ml-2 text-[#CAB3FF]">Ajustes</span>
+        </button>
       </div>
     </div>
   );

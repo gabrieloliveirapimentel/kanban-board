@@ -38,3 +38,10 @@ input {
     box-shadow: 0;
   }
 }
+
+h2 {
+  color: #403937;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3333;
+}
